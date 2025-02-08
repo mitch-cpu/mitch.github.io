@@ -1,0 +1,15 @@
+qui scriverò le cose da aggiungere e gli errori da correggere 
+
+
+in css 
+        .cocktail h2 {
+            font-size: 18px;
+            color: red;
+            position: relative;
+        }
+        .price {
+          position: absolute;
+          right: 50px; /* Lo manda tutto a destra */
+            font-weight: bold;
+
+<!-- metti a posto questi per avere una spaziatura fissa dei prezzi-->
