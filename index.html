@@ -23,6 +23,32 @@
                 font-size: 12px;
             }
         }
+        .dot {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+				display:inline-block;
+            margin: 5px;
+        }
+        .color1 { background-color: #c9a14a; }
+        .color2 { background-color: #e0b88d; }
+        .color3 { background-color: #8c6139; }
+        .color4 { background-color: #29a8e2; }
+        .color5 { background-color: #076d3d; }
+        .color6 { background-color: #524743; }
+        .color7 { background-color: #f8ae3b; }
+        .color8 { background-color: #f05924; }
+        .color9 { background-color: #1364bc; }
+        .color10 { background-color: #029046; }
+        .color11 { background-color: #c39b6a; }
+        .color12 { background-color: #f6911d; }
+        .color13 { background-color: #0070bb; }
+        .color14 { background-color: #02a79e; }
+			.container {
+				display: flex;
+				align-item: center;
+        }
         .container {
              display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Crea una griglia che si adatta automaticamente */
@@ -64,7 +90,7 @@
         .cocktail, .beer, .wine, .food{
             margin: 20px 0;
         }
-        .cocktail h2, .beer h2, .wine h2 {
+        .cocktail h2, .beer h2, .wine h2 .food h2{
             font-size: 18px;
             color: red;
         }
@@ -93,16 +119,18 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 40vh; /* Opzionale per centrare anche verticalmente */
+            height: 60vh; /* Opzionale per centrare anche verticalmente */
             transform: scale(1);
             max-width: 100%;
-            height: 20;
         }
         .link-image {
             transition: 0.3s;
         }
         .link-image:hover {
             opacity: 0.8;
+        }
+        .h3{
+          margin-top: 500px;
         }
     </style>
     <script>
@@ -118,7 +146,8 @@
               <div class="image-container">
                 <img src="./black senza sfondo.png" alt="blackout logo" width="3000" height="1400">
             </div>
-                <h2><br>MENU'</h2>
+              <div> <h3><br>MENU'</h3>
+              </div>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/blackoutpub">
                         <img src="facebook-icon.png" alt="Facebook">
@@ -217,7 +246,7 @@
               </div>
             </div>
           </div>
-      </div>
+        </div>
 <!--qui i gin-->
         <div class="menu">
             <h1 onclick="toggleMenu('ginlist')">G<span>I</span>N LIST</h1>
@@ -390,8 +419,8 @@
                 <h2>WILD WOMBAT <span class="price">10€</span></h2>
                 <p class="description">Blended Malt Scotch Whisky.</p>
             </div>
-        </div>
-        </div>
+            </div>
+          </div>
 <!--qui i Whisky-->
         <div class="menu">
             <h1 onclick="toggleMenu('whiskylist')">WHIS<span>ꓘ</span>Y</h1>
@@ -456,9 +485,132 @@
                 <h2>MONKEY SHOULDER <span class="price">10€</span></h2>
                 <p class="description">Blended Malt Scotch Whisky.</p>
             </div>
+          </div>
         </div>
+<!-- qui i rum -->
+      <div class="menu">
+          <h1 onclick="toggleMenu('rumlist')">R<span>U</span>M</h1>
+          <div id="rumlist" class="hidden">
+            <div class="cocktail">
+                <h2>APPLETON 8 <span class="price">7€</span></h2>
+                <p class="description">Kentucky Straight Bourbon Whiskey.</p>
+            </div>
+            <div class="cocktail">
+                <h2>PLANTATION <span class="price">6€</span></h2>
+                <p class="description">Kentucky Straight Bourbon Whiskey.</p>
+            </div>
+            <div class="cocktail">
+                <h2>PLANTATION O.F.T.D <span class="price">8€</span></h2>
+                <p class="description">Kentucky Straight Rye Whiskey.</p>
+            </div>
+            <div class="cocktail">
+                <h2>APPLETON 12 <span class="price">8€</span></h2>
+                <p class="description">Single Pot Still Irish Whiskey.</p>
+            </div>
+            <div class="cocktail">
+                <h2>RHUM J.M. <span class="price">8€</span></h2>
+                <p class="description">Island single malt Scotch Whiskey.</p>
+            </div>
+                <div class="cocktail">
+                <h2>EL DORADO 12 <span class="price">8€</span></h2>
+            <p class="description">Irish whiskey.</p>
+              </div>
+            <div class="cocktail">
+                <h2>BARON SAMEDI' <span class="price">5€</span></h2>
+            <p class="description">Irish whiskey.</p>
+              </div>
+            <div class="cocktail">
+                <h2>HAMPDEN <span class="price">10€</span></h2>
+            <p class="description">Irish whiskey.</p>
+              </div>
+            <div class="cocktail">
+                <h2>CLARIN COMUNAL <span class="price">8€</span></h2>
+            <p class="description">Irish whiskey.</p>
+              </div>
+            <div class="cocktail">
+                <h2>BPLANTATION PINEAPPLE<span class="price">6€</span></h2>
+            <p class="description">Irish whiskey.</p>
+              </div>
+            <div class="cocktail">
+                <h2>PLANTATION XAYMACA <span class="price">6€</span></h2>
+              <p class="description">special dry.</p>
+              </div>
+            <div class="cocktail">
+                <h2>NUSA CANA <span class="price">7€</span></h2>
+            <p class="description">Irish whiskey.</p>
+              </div>
+            <div class="cocktail">
+                <h2>LA HECHICERA <span class="price">10€</span></h2>
+            <p class="description">Irish whiskey.</p>
+              </div>
+          </div>
         </div>
-    <P>CIAO</P>
+<!-- qui fritti -->
+      <div class="menu">
+          <h1 onclick="toggleMenu('frittilist')">FRI<span>TT</span>I</h1>
+          <div id="frittilist" class="hidden">
+              <div class="beer">
+                  <h2>PAULANER URTYP - 5,5°%</h2>
+                  <p class="description">PAULANER <br> Piccola: 3,50€ - Media: 4,50€.</p>
+              </div>
+              <div class="beer">
+                  <h2>PORTER - 5°%</h2>
+                  <p class="description">TANA DEL SEGUGIO <br> Piccola: 3,50€ - Media: 6,00€.</p>
+              </div>
+              <div class="beer">
+                  <h2>MONCHOF BOCK - 6°%</h2>
+                  <p class="description">MONCHOF <br> Piccola: 3,50€ - Media: 6,00€.</p>
+              </div>
+              <div class="beer">
+                  <h2>KILLER QUEEN - 8°%</h2>
+                  <p class="description">HAMMER <br> Piccola: 3,50€ - Media: 6,00€.</p>
+              </div>
+          </div>
+      </div>
+<!--qui food-->
+      <div class="menu">
+          <h1 onclick="toggleMenu('foodlist')">HAM<span>B</span>URGER</h1>
+          <div id="foodlist" class="hidden">
+              <div class="beer">
+                  <h2>PAULANER URTYP - 5,5°%</h2>
+                  <p class="description">PAULANER <br> Piccola: 3,50€ - Media: 4,50€.</p>
+              </div>
+              <div class="beer">
+                  <h2>PORTER - 5°%</h2>
+                  <p class="description">TANA DEL SEGUGIO <br> Piccola: 3,50€ - Media: 6,00€.</p>
+              </div>
+              <div class="beer">
+                  <h2>MONCHOF BOCK - 6°%</h2>
+                  <p class="description">MONCHOF <br> Piccola: 3,50€ - Media: 6,00€.</p>
+              </div>
+              <div class="beer">
+                  <h2>KILLER QUEEN - 8°%</h2>
+                  <p class="description">HAMMER <br> Piccola: 3,50€ - Media: 6,00€.</p>
+              </div>
+          </div>
+        </div>
+<!-- qui fritti -->
+      <div class="menu">
+          <h1 onclick="toggleMenu('veggylist')">VE<span>GG</span>Y</h1>
+          <div id="veggylist" class="hidden">
+              <div class="beer">
+                  <h2>PAULANER URTYP - 5,5°%</h2>
+                  <p class="description">PAULANER <br> Piccola: 3,50€ - Media: 4,50€.</p>
+              </div>
+              <div class="beer">
+                  <h2>PORTER - 5°%</h2>
+                  <p class="description">TANA DEL SEGUGIO <br> Piccola: 3,50€ - Media: 6,00€.</p>
+              </div>
+              <div class="beer">
+                  <h2>MONCHOF BOCK - 6°%</h2>
+                  <p class="description">MONCHOF <br> Piccola: 3,50€ - Media: 6,00€.</p>
+              </div>
+              <div class="beer">
+                  <h2>KILLER QUEEN - 8°%</h2>
+                  <p class="description">HAMMER <br> Piccola: 3,50€ - Media: 6,00€.</p>
+              </div>
+          </div>
+      </div>
 </body>
 </html>
 
