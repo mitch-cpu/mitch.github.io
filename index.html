@@ -28,8 +28,9 @@
             width: 20px;
             height: 20px;
             border-radius: 50%;
- 	    display:inline-block;
+ 	        display:inline-block;
             margin: -4px;
+            posi
         }
         .color1 { background-color: #c9a14a; }
         .color2 { background-color: #e0b88d; }
@@ -47,8 +48,18 @@
         .color14 { background-color: #02a79e; }
 	    .container {
 		display: flex;
-		align-item: center;
+		align-items: center;
         }
+    
+        .main-dot-container{
+            display: flex;
+            justify-content: center;
+            gap: 0;
+        }
+        .dot + .dot {
+            left: -20px;
+        }
+
         .container {
         	display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Crea una griglia che si adatta automaticamente */
@@ -101,6 +112,10 @@
         .description {
             font-size: 14px;
             color: #bbb;
+        }
+        .h6 {
+            font-size: 20px;
+            color: #9c9b9b;
         }
         .social-icons {
             display: flex;
@@ -208,20 +223,8 @@
                     <a href="https://www.instagram.com/blackoutpubcarpi/">
                         <img src="instagram-icon.png" alt="Instagram">
                     </a>
-                </div>
-		<div class="container">
-                <div class="main-dot-container">
-                    <div class="dot color1"></div>
-                    <div class="dot color3"></div>
-                    <div class="dot color4"></div>
-                    <div class="dot color6"></div>
-                    <div class="dot color9"></div>
-                    <div class="dot color10"></div>
-                    <div class="dot color12"></div>
-                    <div class="dot color13"></div>
-                </div>
-            </div>
-                <!--<p>@BLAC<span>K</span>OUTPUBCARPI</p>-->
+                </div>              
+                <p>@BLAC<span>K</span>OUTPUBCARPI</p>
             </div>
         </div>
 <!--qui le birre FATTO!!-->
@@ -888,12 +891,12 @@
         </div>
       </div>
     </div>
-<!-- qui fritti        METTERE GLI ALLERGENI-->
+<!-- qui fritti + allergeni-->
     <div class="menu">
       <h1 onclick="toggleMenu('frittilist')">FR<span>I</span>TTI</h1>
         <div id="frittilist" class="hidden">
         <div class="cocktail">
-            <h2>PATATINE FRITTE <span class="price">5€</span></h2>
+            <h2>PATATINE FRITTE*<span class="price">5€</span></h2>
             <p class="description"></p>
         </div>
         <div class="cocktail">
@@ -901,182 +904,217 @@
             <p class="description">patatine fritte con buccia</p>
         </div>
         <div class="cocktail">
-            <h2>OLIVE ALL'ASCOLANA<span class="price">5€</span></h2>
-            <p class="description"></p>
+            <h2>OLIVE ALL'ASCOLANA*<span class="price">5€</span></h2>
+            <p class="description">1, 3, 6, 7, 8, 10</p>
         </div>
         <div class="cocktail">
-            <h2>MOZZARELLINE<span class="price">5€</span></h2>
-            <p class="description"></p>
+            <h2>MOZZARELLINE*<span class="price">5€</span></h2>
+            <p class="description">1, 6, 7, 9</p>
         </div>
         <div class="cocktail">
-            <h2>ANELLI DI CIPOLLA<span class="price">5€</span></h2>
-            <p class="description"></p>
+            <h2>ANELLI DI CIPOLLA*<span class="price">5€</span></h2>
+            <p class="description">1, 6, 7, 8, 10</p>
         </div>
         <div class="cocktail">
-            <h2>JALABITE<span class="price">5€</span></h2>
-            <p class="description">Jalapenos piccanti con formaggio</p>
+            <h2>JALABITE*<span class="price">5€</span></h2>
+            <p class="description">Jalapenos piccanti con formaggio <br>1, 7</p>
         </div>
         <div class="cocktail">
-            <h2>NUGGETS DI POLLO<span class="price">5€</span></h2>
-            <p class="description"></p>
+            <h2>NUGGETS DI POLLO*<span class="price">5€</span></h2>
+            <p class="description">1, 3, 7, 10, 12</p>
         </div>
         <div class="cocktail">
             <h2>MISTO FRITTO<span class="price">7€</span></h2>
-            <p class="description">patatine fritte, 3 mozzarelline, 3 olive, 3 anelli di cipolla</p>
+            <p class="description">patatine fritte, 3 mozzarelline, 3 olive, 3 anelli di cipolla <br>1, 3, 5, 6, 7, 9, 10</p>
         </div>
         <div class="cocktail">
             <h2>PATASPACCA<span class="price">7€</span></h2>
             <p class="description">patatine fritte, wurstel, salsiccia luganega</p>
         </div>
         <div class="cocktail">
-            <h2>PEPITE DI PULLED PORK<span class="price">6€</span></h2>
-            <p class="description">con salsa BBQ</p> <br>
-            <span>class="color1; color6; color10"</span>
+            <h2>PEPITE DI PULLED PORK*<span class="price">6€</span></h2>
+            <p class="description">con salsa BBQ <br> 1, 6, 10</p> 
         </div>
+        <h6>* prodotto surgelato</h6>
         </div>
     </div>
-<!--qui hamburger-->
+<!--qui hamburger +allergeni-->
     <div class="menu">
         <h1 onclick="toggleMenu('hamblist')">HAM<span>B</span>URGER</h1>
         <div id="hamblist" class="hidden">
         <div class="cocktail">
             <h2>A-POLLO 13 <span class="price">10€</span></h2>
-            <p class="description">Pane Burger di semola, Cotoletta Crispy pollo, cavolo rosso marinato, Maionese, salsa Teriaki, insalata iceberg, lime</p>
+            <p class="description">Pane Burger di semola, Cotoletta Crispy pollo*, cavolo rosso marinato, Maionese, salsa Teriaki, insalata iceberg, lime <br>1, 3, 4, 6, 9, 10, 12, 13</p>
         </div>
         <div class="cocktail">
             <h2>CHEESEBURGER<span class="price">8€</span></h2>
-            <p class="description">Pane Burger di semola, Carne di Bovino 100g, cheddar, insalata, pomodoro, salse a scelta</p>
+            <p class="description">Pane Burger di semola, Carne di Bovino 100g, cheddar, insalata, pomodoro, salse a scelta <br>1, 7</p>
         </div>
         <div class="cocktail">
             <h2>POLLON<span class="price">8€</span></h2>
-            <p class="description">Pane Burger di semola, Cotoletta di pollo, insalata, pomodoro, cipolla, ketchup, maionese,</p>
+            <p class="description">Pane Burger di semola, Cotoletta Crispy pollo*, insalata, pomodoro, cipolla, ketchup, maionese,<br>1, 2, 3, 4, 6, 9, 10, 11, 12</p>
         </div>
         <div class="cocktail">
             <h2>HEIDI<span class="price">10€</span></h2>
-            <p class="description">Pane Malfatto, Carne Reale di Scottona 150g, scamorza affumicata, speck croccante, rucola, salsa tartufata</p>
+            <p class="description">Pane Malfatto, Carne Reale di Scottona 150g, scamorza affumicata, speck croccante, rucola, salsa tartufata <br>1, 5, 6, 7, 8, 10, 11, 14</p>
         </div>
         <div class="cocktail">
             <h2>GUNDAM<span class="price">10€</span></h2>
-            <p class="description">Pane Malfatto, Carne Reale di Scottona 150g, bacon, scamorza affumicata, insalata, pomodoro, cipolla, salsa BBQ</p>
+            <p class="description">Pane Malfatto, Carne Reale di Scottona 150g, bacon, scamorza affumicata, insalata, pomodoro, cipolla, salsa BBQ <br>1, 6, 7, 10, 11</p>
         </div>
         <div class="cocktail">
             <h2>FANTAMAN <span class="price">12€</span></h2>
-            <p class="description">PaneBurger di semola, Doppia Carne di Bovino 100g + 100g, bacon, insalata, pomodoro, cipolla, ketchup, maionese</p>
+            <p class="description">PaneBurger di semola, Doppia Carne di Bovino 100g + 100g, bacon, insalata, pomodoro, cipolla, ketchup, maionese <br>1, 3, 9</p>
         </div>
         <div class="cocktail">
             <h2>PEPPO<span class="price">10€</span></h2>
-            <p class="description">Pane malfatto, Carne Reale di Scottona 150g, scamorza affumicata, rucola, salsa ai peperoni affumicati</p>
+            <p class="description">Pane malfatto, Carne Reale di Scottona 150g, scamorza affumicata, rucola, salsa ai peperoni affumicati <br>1, 6, 7, 10, 11</p>
         </div>
+        <h6>* prodotto surgelato</h6>
         </div>
     </div>
-<!--qui piade e panini-->
+<!--qui piade e panini +allergeni-->
     <div class="menu">
         <h1 onclick="toggleMenu('pplist')">PI<span>A</span>DE E P<SPAN>A</SPAN>NINI</h1>
         <div id="pplist" class="hidden">
         <div class="cocktail">
             <h2>ROMAGNOLA <span class="price">7€</span></h2>
-            <p class="description">Piadina, prosciutto crudo, stracchino, rucola</p>
+            <p class="description">Piadina*, prosciutto crudo, stracchino, rucola <br>1, 3, 6, 7, 8, 9, 10</p>
         </div>
         <div class="cocktail">
             <h2>SWITCH<span class="price">7€</span></h2>
-            <p class="description">Pane americano, prosciutto cotto, funghi porcini con crema, maionese</p>
+            <p class="description">Pane americano*, prosciutto cotto, funghi porcini con crema, maionese <br>1,3,5,6,7,8,10</p>
         </div>
         <div class="cocktail">
             <h2>REATTORE<span class="price">7€</span></h2>
-            <p class="description">Pane americano, prosciutto crudo, rucola, scaglie di parmigiano, aceto balsamico</p>
+            <p class="description">Pane americano*, prosciutto crudo, rucola, scaglie di parmigiano, aceto balsamico <br>1,6,7,10,12</p>
         </div>
         <div class="cocktail">
             <h2>T.S.O. <span class="price">7€</span></h2>
-            <p class="description">pane americano, speck, fontina, insalata, funghi porcini con crema</p>
+            <p class="description">pane americano*, speck, fontina, insalata, funghi porcini con crema <br>1,5,6,7,8,10</p>
         </div>
         <div class="cocktail">
             <h2>PLAFONIERA<span class="price">7€</span></h2>
-            <p class="description">Ciabatta, speck, scamorza affumicata, crema di carciofi</p>
+            <p class="description">Ciabatta*, speck, scamorza affumicata, crema di carciofi <br>1,6,7,10,11,14</p>
         </div>
         <div class="cocktail">
             <h2>ANODO <span class="price">9€</span></h2>
-            <p class="description">Piadina, pancetta steccata, salsiccia luganega, maionese</p>
+            <p class="description">Piadina*, pancetta steccata, salsiccia luganega*, maionese <br>1,3,6,7,8,9,10</p>
         </div>
         <div class="cocktail">
             <h2>BISUNTO<span class="price">9€</span></h2>
-            <p class="description">Ciabatta, salsiccia luganega o cotoletta di pollo, cipolla, peperoni grigliati</p>
+            <p class="description">Ciabatta*, salsiccia luganega* o cotoletta di pollo*, cipolla, peperoni grigliati <br>1,6,7,10,11,14/ 2,3,4,9,12</p>
         </div>
         <div class="cocktail">
             <h2>HOT DOG<span class="price">5€</span></h2>
-            <p class="description">Salse a scelta</p>
+            <p class="description">Salse a scelta <br>1</p>
         </div>
         <div class="cocktail">
             <h2>HOT DOG H.D.L.<span class="price">5€</span></h2>
-            <p class="description">wurstel avvolto nel bacon, salse a scelta </p>
+            <p class="description">wurstel avvolto nel bacon, salse a scelta <br>1</p>
         </div>
         <div class="cocktail">
             <h2>BOSCHETTO<span class="price">8€</span></h2>
-            <p class="description">Pan Semola, carne di bovino 100g, Scamorza, Salsa bacon Burger, crema di funghi trifolati, rucola</p>
+            <p class="description">Pan Semola, carne di bovino 100g, Scamorza, Salsa bacon Burger, crema di funghi trifolati, rucola <br> 1,7,8</p>
         </div>
         <div class="cocktail">
             <h2>DOUBLE BURGER<span class="price">10€</span></h2>
-            <p class="description">Pan semola, Doppia carne di bovino 100g + 100g, Cheddar, Salsa bacon burger</p>
+            <p class="description">Pan semola, Doppia carne di bovino 100g + 100g, Cheddar, Salsa bacon burger <br>1,3,7,10</p>
         </div>
-        </div>
+        <h6>* prodotto surgelato</h6>
+      </div>
     </div>    
-<!-- qui vegan FATTO!!-->
+<!-- qui vegan +allergeni (mi piacerebbe mettere pallino verde ma sarebbe in tutti)-->
     <div class="menu">
         <h1 onclick="toggleMenu('veganlist')">VE<span>GG</span>Y</h1>
         <div id="veganlist" class="hidden">
         <div class="cocktail">
             <h2>VEGGY DOG<span class="price">10€</span></h2>
-            <p class="description">Pane Hot Dog, Salsiccia vegana, cavolo viola marinato e vegan mayo con sriracha</p>
+            <p class="description">Pane Hot Dog, Salsiccia vegana, cavolo viola marinato e vegan mayo con sriracha <br>1</p>
         </div>
         <div class="cocktail">
             <h2>VEGGY GREASY<span class="price">10€</span></h2>
-            <p class="description">Ciabatta, Salsiccia vegana, Peperoni, Cipolla</p>
+            <p class="description">Ciabatta*, Salsiccia vegana, Peperoni, Cipolla <br>1,6,7,10,11,12,14</p>
         </div>
         <div class="cocktail">
             <h2>VEGGY BEANS BURGER<span class="price">10€</span></h2>
-            <p class="description">Pane malfatto, Hamburger di barbabietola rossa e fagioli rossi, cavolo rosso, cipolla grigliata, insalata icebergm maionese vegana, salsa teriaki</p>
+            <p class="description">Pane malfatto*, Hamburger di barbabietola rossa e fagioli rossi*, cavolo rosso, cipolla grigliata, insalata icebergm maionese vegana, salsa teriaki <br>1,6,7,10,11,12</p>
         </div>
         <div class="cocktail">
             <h2>GRIGLIATO<span class="price">10€</span></h2>
-            <p class="description">Ciabatta, insalata, pomodoro, verdure grigliate, zucchine, melanzane, cipolle, peperoni</p>
+            <p class="description">Ciabatta*, insalata, pomodoro, verdure grigliate, zucchine, melanzane, cipolle, peperoni* <br>1,6,7,10,11,14</p>
         </div>
+        <h6>* prodotto surgelato</h6>
         </div>
     </div>
-<!--qui speciali -->
+<!--qui speciali +allergeni (mi piacerebbe mettere pallino rosso per piccanti)-->
     <div class="menu">
         <h1 onclick="toggleMenu('specialist')"><span>S</span>PECIALI</h1>
         <div id="specialist" class="hidden">
         <div class="cocktail">
             <h2>CLASSICO<span class="price">7€</span></h2>
-            <p class="description">Toast multicereali, prosciutto cotto, insalata iceberg, pomodoro, maionese, tabasco</p>
+            <p class="description">Toast multicereali, prosciutto cotto, insalata iceberg, pomodoro, maionese, tabasco <br>1,3,6,7,10,11,12,14</p>
         </div>
         <div class="cocktail">
             <h2>CLUB SANDWICH<span class="price">10€</span></h2>
-            <p class="description">Sanwich Bread a tre strati, prosciutto cotto, bacon, pomodoro, insalata, maionese, tabasco</p>
+            <p class="description">Sanwich Bread a tre strati, prosciutto cotto, bacon, pomodoro, insalata, maionese, tabasco <br>1,3,6,7,10,11,12,14</p>
         </div>
         <div class="cocktail">
             <h2>COPPATA <span class="price">10€</span></h2>
-            <p class="description">Focaccia romana, Coppa nostrana stagionata, stracchino, noci</p>
+            <p class="description">Focaccia romana, Coppa nostrana stagionata, stracchino, noci <br>1,7,8,10,11,12,14</p>
         </div>
         <div class="cocktail">
             <h2>FOCACCIA ROMANA<span class="price">8€</span></h2>
-            <p class="description">Base margherita, + 1,00 € ad aggiunta di ingrediente, 2,00 euro salsiccia e crudo</p>
+            <p class="description">Base margherita, + 1,00 € ad aggiunta di ingrediente, 2,00 euro salsiccia e crudo <br>1,3,6,7,8,10,11,14</p>
         </div>
         <div class="cocktail">
             <h2>INSALAZZA <span class="price">10€</span></h2>
-            <p class="description">Insalata mista con verdure fresche e tonno</p>
+            <p class="description">Insalata mista con verdure fresche e tonno <br>4</p>
         </div>
         <div class="cocktail">
             <h2>CASAR SALAD<span class="price">12€</span></h2>
-            <p class="description">Insalata iceberg, straccetti di pollo, bacon, crostini di pane, scaglie di parmigiano, dressing senape e miele</p>
+            <p class="description">Insalata iceberg, straccetti di pollo, bacon, crostini di pane, scaglie di parmigiano, dressing senape e miele <br>1, 3, 7, 10</p>
         </div>
+        <h6>* prodotto surgelato</h6>
         </div>
     </div>
-	<!--lista allergeni-->
+<!--qui i dolci +allergeni-->
+    <div class="menu">
+        <h1 onclick="toggleMenu('dolcilist')">D<span>O</span>LCI</h1>
+        <div id="dolcilist" class="hidden">
+        <div class="cocktail">
+            <h2>NONNA 4.0<span class="price">6€</span></h2>
+            <p class="description">Monoporzione di pasta frolla. crema al limone, glassa al cioccolato bianco e limone <BR>1, 3, 6, 7, 8, 10</BR></p>
+        </div>
+        <div class="cocktail">
+            <h2>CHEESBURGER FRUTTI ROSSI<b>*</b> <span class="price">6€</span></h2>
+            <p class="description">1, 3, 5, 6, 7, 8, 10, 12</p>
+        </div>
+        <div class="cocktail">
+            <h2>SOUFFLÈ AL CIOCCOLATO* <span class="price">6€</span></h2>
+            <p class="description">1, 3, 6, 7, 8</p>
+        </div>
+        <div class="cocktail">
+            <h2>CHEESECAKE<span class="price">6€</span></h2>
+            <p class="description">Caramello salato o Nutella <BR>1, 2, 3, 6, 7, 8</BR></p>
+        </div>
+        <div class="cocktail">
+            <h2>PIADINA NUTELLA <span class="price">6€</span></h2>
+            <p class="description">1, 6, 7, 8, 10, 11, 14</p>
+        </div>
+        <div class="cocktail">
+            <h2>TORTA DI NOCI<span class="price">6€</span></h2>
+            <p class="description">1, 3, 6, 7, 8</p>
+        </div>
+        <h6>* prodotto surgelato</h6>
+        </div>
+    </div>
+<!--lista allergeni-->
       <div class="menu">
         <h2 onclick="toggleMenu('allergeniliste')">LISTA ALLERGENI</h2>
           <div id="allergeniliste" class="hidden">
             <div class="allergenie">
-              <img src="ciao.jpg" style="width: 200px; height: auto;" alt="">
+              <img src="allergeni con numeri fatta da me.png" style="width: 400px; height: 500;" alt="">
           </div>
         </div>
       </div>
