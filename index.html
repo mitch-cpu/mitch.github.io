@@ -1,16 +1,17 @@
+<!-- CARICARE ONLINE -->
 <!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blackout Menu</title>
-    <style>
+        <style>
         @font-face {
             font-family: 'Cheque';
             src: url('Cheque.ttf') format('truetype');
         }
-        @media screen and (max-width: 480px) {
-            h1 {
+        @media screen and (max-width: 480px) 
+            .h1 {
                 font-size: 30px;
             }
             h2 {
@@ -22,159 +23,159 @@
             .price {
                 font-size: 16px;
             }
-        }
-        .dot {
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
- 	        display:inline-block;
-            margin: -4px;
-            posi
-        }
-        .color1 { background-color: #c9a14a; }
-        .color2 { background-color: #e0b88d; }
-        .color3 { background-color: #8c6139; }
-        .color4 { background-color: #29a8e2; }
-        .color5 { background-color: #076d3d; }
-        .color6 { background-color: #524743; }
-        .color7 { background-color: #f8ae3b; }
-        .color8 { background-color: #f05924; }
-        .color9 { background-color: #1364bc; }
-        .color10 { background-color: #029046; }
-        .color11 { background-color: #c39b6a; }
-        .color12 { background-color: #f6911d; }
-        .color13 { background-color: #0070bb; }
-        .color14 { background-color: #02a79e; }
-	    .container {
-		display: flex;
-		align-items: center;
-        }
-    
-        .main-dot-container{
+            .dot {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                display:inline-block;
+                margin: -4px;
+            }
+            .color1 { background-color: #c9a14a; }
+            .color2 { background-color: #e0b88d; }
+            .color3 { background-color: #8c6139; }
+            .color4 { background-color: #29a8e2; }
+            .color5 { background-color: #076d3d; }
+            .color6 { background-color: #524743; }
+            .color7 { background-color: #f8ae3b; }
+            .color8 { background-color: #f05924; }
+            .color9 { background-color: #1364bc; }
+            .color10 { background-color: #029046; }
+            .color11 { background-color: #c39b6a; }
+            .color12 { background-color: #f6911d; }
+            .color13 { background-color: #0070bb; }
+            .color14 { background-color: #02a79e; }
+            .container {
             display: flex;
-            justify-content: center;
-            gap: 0;
-        }
-        .dot + .dot {
-            left: -20px;
-        }
-
-        .container {
-        	display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Crea una griglia che si adatta automaticamente */
-            gap: 20px;
-        }
-        body {
-            background-color: black;
-            color: white;
-            font-family: 'Cheque', sans-serif;
-            font-size: 16px;
-            text-align: center;
-            padding: 20px;
-        }
-        .container {
-            max-width: 1000px;
-            margin: auto;
-        }
-        .header {
-            border: 5px solid red;
-            padding: 100px;
-            margin-bottom: -1px;
-        }
-        .menu {
-            max-width: 600px;
-            margin: auto;
-            background: linear-gradient(to bottom, rgba(9,9,9,9.3), rgba(0,0,0,0.3));
-            border: 5px solid red;
-            padding: 10px;
-        }
-        h1 {
-            font-size: 40px;
-            letter-spacing: 2px;
-            cursor: pointer;
-        }
-        h1 span {
-            font-size: 40px;
-            color: red;
-        }
-        .description span {
-            font-size: 14px;
-            color: red;
-        }
-        .cocktail, .beer, .wine, .food{
-            margin: 20px 0;
-        }
-        .cocktail h2, .beer h2, .wine h2 .food h2{
-            font-size: 18px;
-            color: red;
-        }
-        .description {
-            font-size: 14px;
-            color: #bbb;
-        }
-        .h6 {
-            font-size: 20px;
-            color: #9c9b9b;
-        }
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-bottom: 10px;
-        }
-        .social-icons img {
-            width: 40px;
-            height: 40px;
-        }
-        .hidden {
-            display: none;
-        }
-        .price{
-          position: absolute;
-          left: 320px;
-        }
-        .image-container {
-            display: flex;
-            justify-content: center;
             align-items: center;
-            transform: scale(1);
-	    height: 30vh; 
-            max-width: 95%;
-	    margin-bottom: 50px;
-        }
-        .link-image {
-            transition: 0.3s;
-        }
-        .link-image:hover {
-            opacity: 0.8;
-        }
-        .h3{
-          margin-top: 500px;
-        }
-        nav {
-          display: flex;
-          justify-content: space-between;
-          background: #333;
-          padding: 10px;
-        }
+            }
 
-        nav ul {
-          list-style: none;
-          padding: 0;
-          margin: 0;
-          display: flex;
-        }
+            .main-dot-container{
+                display: flex;
+                justify-content: center;
+                gap: 0;
+            }
+            .dot + .dot {
+                left: -20px;
+            }
 
-        nav ul li {
-          padding: 10px;
-        }
+            .container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Crea una griglia che si adatta automaticamente */
+                gap: 20px;
+            }
+            body {
+                background-color: black;
+                color: white;
+                font-family: 'cheque', sans-serif;
+                font-size: 16px;
+                text-align: center;
+                padding: 20px;
+            }
+            .container {
+                max-width: 1000px;
+                margin: auto;
+            }
+            .header {
+                border: 5px solid red;
+                padding: 100px;
+                margin-bottom: -1px;
+            }
+            .menu {
+                max-width: 600px;
+                margin: auto;
+                background: linear-gradient(to bottom, rgba(9,9,9,9.3), rgba(0,0,0,0.3));
+                border: 5px solid red;
+                padding: 10px;
+            }
+            h1 {
+                font-size: 40px;
+                letter-spacing: 2px;
+                cursor: pointer;
+            }
+            h1 span {
+                font-size: 40px;
+                color: red;
+            }
+            .description span {
+                font-size: 14px;
+                color: red;
+            }
+            .cocktail, .beer, .wine, .food{
+                margin: 20px 0;
+            }
+            .cocktail h2, .beer h2, .wine h2 .food h2{
+                font-size: 18px;
+                color: red;
+            }
+            .description {
+                font-size: 14px;
+                color: #f8f5f5;
+                line-height: -2em;
+            }
+            .h6 {
+                font-size: 20px;
+                color: #9c9b9b;
+            }
+            .social-icons {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                margin-bottom: 10px;
+            }
+            .social-icons img {
+                width: 40px;
+                height: 40px;
+            }
+            .hidden {
+                display: none;
+            }
+            .price{
+            position: absolute;
+            left: 320px;
+            }
+            .image-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transform: scale(1);
+            height: 30vh; 
+                max-width: 95%;
+            margin-bottom: 50px;
+            }
+            .link-image {
+                transition: 0.3s;
+            }
+            .link-image:hover {
+                opacity: 0.8;
+            }
+            .h3{
+            margin-top: 500px;
+            font-size: 100px;
 
-        nav ul li a {
-          color: white;
-          text-decoration: none;
-        }
+            }
+            nav {
+            display: flex;
+            justify-content: space-between;
+            background: #333;
+            padding: 10px;
+            }
 
+            nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            }
+
+            nav ul li {
+            padding: 10px;
+            }
+
+            nav ul li a {
+            color: white;
+            text-decoration: none;
+            }
         /* Menu per smartphone */
         @media screen and (max-width: 768px) {
           nav ul {
@@ -212,9 +213,9 @@
     <div class="container">
         <div class="header">
               <div class="image-container">
-                <img src="./black senza sfondo.png" style="width: 1250px; height: 500px;" alt="blackout logo">
+                <img src="./black senza sfondo.png" style="width: 1500px; height: 600px;" alt="blackout logo">
             </div>
-              <div> <h3><br>MENU'</h3>
+              <div> <h1>MENU'</h1>
               </div>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/blackoutpub">
@@ -224,7 +225,7 @@
                         <img src="instagram-icon.png" alt="Instagram">
                     </a>
                 </div>              
-                <!--<p>@BLAC<span>K</span>OUTPUBCARPI</p>-->
+                <p>@BLAC<span>K</span>OUTPUBCARPI</p>
             </div>
         </div>
 <!--qui le birre FATTO!!-->
@@ -233,19 +234,19 @@
             <div id="beerList" class="hidden">
                 <div class="beer">
                     <h2>PAULANER URTYP - 5,1%</h2>
-                    <p class="description"> <bold>PAULANER</bold> <br> Piccola: 3,50€ - Media: 4,50€.</p>
+                    <p class="description"> <B>PAULANER</B> <br> Piccola: 3,50€ - Media: 4,50€</p>
                 </div>
                 <div class="beer">
                     <h2>DU MARON - 5,5%</h2>
-                    <p class="description">CLATERNA <br> Piccola: 3,50€ - Media: 6,00€.</p>
+                    <p class="description"><B>CLATERNA</B> <br> Piccola: 3,50€ - Media: 6,00€</p>
                 </div>
                 <div class="beer">
-                    <h2>MONCHOF BOCK - 6°%</h2>
-                    <p class="description">MONCHOF <br> Piccola: 3,50€ - Media: 6,00€.</p>
+                    <h2>MONCHOF BOCK - 6%</h2>
+                    <p class="description"><B>MONCHOF</B> <br> Piccola: 3,50€ - Media: 6,00€</p>
                 </div>
                 <div class="beer">
                     <h2>JAIPUR - 5,9%</h2>
-                    <p class="description">THORNBRIDGE <br> Piccola: 3,50€ - Media: 6,00€.</p>
+                    <p class="description"> <B>THORNBRIDGE</B> <br> Piccola: 3,50€ - Media: 6,00€</p>
                 </div>
             </div>
         </div>
@@ -263,27 +264,27 @@
             </div>
             <div class="cocktail">
                 <h2>INKOMING <span class="price">8€</span></h2>
-                <p class="description">Gin My Fair Navy Strenght, Cointreau, Rum Plantation Pineapple, Succo Pesca, Succo Lime, Sciroppo Ciliegia, Essenza Naturale al Rabarbaro</p>
+                <p class="description">Gin My Fair Navy Strenght six p.m. , Cointreau, Rum Plantation Pineapple, Succo Pesca, Succo Lime, Sciroppo Ciliegia, Essenza Naturale al Rabarbaro</p>
             </div>
            <div class="cocktail">
                 <h2>ROSSO B <span class="price">10€</span></h2>
-                <p class="description">Bitter italiano, dry gin, vodka, pompelmo, cetriolo, sciroppo d'agave, bubble water.</p>
+                <p class="description"> Bicken's london dry gin, Vodka pesca, Succo ace, Sciroppo fragola, Scweppes lemon</p>
             </div>
             <div class="cocktail">
                 <h2>STILL GREEN <span class="price">10€</span></h2>
-                <p class="description">Lime cordiale, zucchero, zucchero di kiwi, Kingston Amaro, Vermouth torbato.</p>
+                <p class="description">Rum Kingstone Gold, galvanina the verde, Sciroppo Kiwi, Lime pestato</p>
             </div>
             <div class="cocktail">
                 <h2>ORANGE LADY  <span class="price">10€</span></h2>
-                <p class="description">Gin, triple sec, succo di limone, albume.</p>
+                <p class="description">Bicken's al pompelmo, Cointreau, Sciroppo maracuja, Succo limone, Angostura</p>
             </div>
             <div class="cocktail">
-                <h2>MAI TAI  <span class="price">12€</span></h2>
-                <p class="description">Rum Appleton Estate di Riserva, Rum overproof, orzata, lime, curacao, sciroppo di zucchero.</p>
+                <h2>MAY TAI  <span class="price">12€</span></h2>
+                <p class="description">Rum Appleton Estate di Riserva, Rum Baron Samedì, Rum overproof, Rum plantation F.T.D. Gran Marnier, Sciroppo di orzata, lime</p>
             </div>
             <div class="cocktail">
                 <h2>INFAME <span class="price">8€</span></h2>
-                <p class="description">Sky vodka, Cointreau, Sciroppo maracuja, Succo limone, Galvanina ginger ale</p>
+                <p class="description">Sky vodka, Cointreau, Sciroppo maracuja, Succo limone, Fever-Tree ginger ale</p>
             </div>
           </div>
         </div>
@@ -293,19 +294,19 @@
           <div id="analist" class="hidden">
             <div class="cocktail">
               <h2>GRANATA<span class="price"> 6€</span></h2>
-              <p class="description">Galvanina Tea verde - Succo Limone - Sciroppo Ciliegia - Sciroppo orzata - Tabasco - Pepe</p>
+              <p class="description">Galvanina The verde - Succo Limone - Sciroppo Ciliegia - Pepe - Tabasco - Pepe</p>
             </div>
             <div class="cocktail">
               <h2>MYRA <span class="price">6€</span></h2>
               <p class="description">Succo mirtillo - Succo di limone - Sciroppo Cannella - Sciroppo fiori di sambuco</p>
             </div>
             <div class="cocktail">
-              <h2>SOLE <span class="price">6€</span></h2>
-              <p class="description">Succo pesca - Succo di limone - Sciroppo Maracuja - Menta - Galvanina pompelmo soda</p>
+              <h2>SOL_E <span class="price">6€</span></h2>
+              <p class="description">Succo pesca, Succo di limone, Sciroppo Maracuja, Galvanina pompelmo soda</p>
              </div>
              <div class="cocktail">
               <h2>KORE <span class="price">6€</span></h2>
-              <p class="description">Galvanina Tea verde bio - Orzata - Sciroppo di cocco</p>
+              <p class="description">Galvanina The verde bio - Orzata - Sciroppo di cocco</p>
 	        </div>
         </div>
     </div>
@@ -328,7 +329,7 @@
             <div class="beer">
                 <h2>FIANO</h2>
                 <p class="description">PRODUTTORI DI MANDURIA 2022 <br> Bottiglia <span>30€</span> - Calice <span>6€</span></p>
-            </div>
+            </div> <br><br>
             <div class="beer">
                 <h2>ETNA BIANCO</h2>
                 <p class="description">BARONE DI VILLAGRANDE 2023 <br> Bottiglia <span>30€</span> - Calice <span>6€</span></p>
@@ -340,7 +341,7 @@
             <div class="beer">
                 <h2>VERMENTINO</h2>
                 <p class="description">LA PIETRA DEL FOCOLARE - VILLA LINDA - COLLI DI LUNI 2022<br> Bottiglia <span>27€</span> - Calice <span>6€</span></p>
-            </div>
+            </div><br><br>
             <div class="beer">
                 <h2>PROSECCO BRUT MILLESIMATO</h2>
                 <p class="description">BORGO MOLINO - MOTIVO <br> Bottiglia <span>20€</span> - Calice <span>5€</span></p>
@@ -469,7 +470,7 @@
             </div>
             <div class="cocktail">
                 <h2>GIN ARTE<span class="price">10€</span></h2>
-                <p class="description">Aromatizzato Al Melograno</p>
+                <p class="description">Melograno</p>
             </div>
             <div class="cocktail">
                 <h2>PIERO <span class="price">10€</span></h2>
@@ -484,11 +485,15 @@
                 <p class="description">Single Grain Japanese Whisky.</p>
             </div>
             <div class="cocktail">
+                <h2>ACQUE VERDI DRY<span class="price">10€</span></h2>
+                <p class="description">Single Grain Japanese Whisky.</p>
+            </div>
+            <div class="cocktail">
                 <h2>JINZU <span class="price">8€</span></h2>
                 <p class="description">Blended Malt Scotch Whisky.</p>
             </div>
             <div class="cocktail">
-                <h2>KI NO BI <span class="price">10€</span></h2>
+                <h2>KI.NO.BI <span class="price">10€</span></h2>
                 <p class="description">Irish whiskey.</p>
             </div>
             <div class="cocktail">
@@ -531,63 +536,55 @@
             <div id="whiskylist" class="hidden">
             <div class="cocktail">
                 <h2>WILD TURKEY 101 <span class="price">6€</span></h2>
-                <p class="description">Kentucky Straight Bourbon Whiskey.</p>
+                <p class="description">Kentucky Straight Bourbon Whiskey</p>
             </div>
             <div class="cocktail">
                 <h2>WILD TOURKEY BOURBOUN <span class="price">5€</span></h2>
-                <p class="description">Kentucky Straight Bourbon Whiskey.</p>
+                <p class="description">Kentucky Straight Bourbon Whiskey</p>
             </div>
             <div class="cocktail">
                 <h2>WILD TURKEY RYE <span class="price">5€</span></h2>
-                <p class="description">Kentucky Straight Rye Whiskey.</p>
+                <p class="description">Kentucky Straight Rye Whiskey</p>
             </div>
             <div class="cocktail">
-                <h2>REDBEAST 12 <span class="price">9€</span></h2>
-                <p class="description">Single Pot Still Irish Whiskey.</p>
+                <h2>REDBREAST 12 <span class="price">9€</span></h2>
+                <p class="description">Single Pot Still Irish Whiskey</p>
             </div>
             <div class="cocktail">
                 <h2>TALISKER SKYE <span class="price">7€</span></h2>
-                <p class="description">Island single malt Scotch Whiskey.</p>
+                <p class="description">Island single malt Scotch Whiskey</p>
             </div>
             <div class="cocktail">
                 <h2>JAMESON <span class="price">5€</span></h2>
-                <p class="description">Irish whiskey.</p>
+                <p class="description">Irish whiskey</p>
             </div>
             <div class="cocktail">
                 <h2>WILD TURKEY LONGBRANCH <span class="price">9€</span></h2>
-                <p class="description">Kentucky straight Bourbon.</p>
+                <p class="description">Kentucky straight Bourbon</p>
             </div>
             <div class="cocktail">
                 <h2>WEE BEASTIE ARDBEG 10 <span class="price">10€</span></h2>
-                <p class="description">Islay Single Malt Scotch Whisky.</p>
+                <p class="description">Islay Single Malt Scotch Whisky</p>
             </div>
             <div class="cocktail">
                 <h2>YAMAZAKURA <span class="price">10€</span></h2>
-                <p class="description">Fine Blended Japanese Whisky.</p>
+                <p class="description">Fine Blended Japanese Whisky</p>
             </div>
             <div class="cocktail">
                 <h2>ROE & CO <span class="price">7€</span></h2>
-                <p class="description">Irish Whiskey Dublin.</p>
-            </div>
-            <div class="cocktail">
-                <h2>KILCHOMAN <span class="price">7€</span></h2>
-                <p class="description">Islay Single Malt Scotch Whisky.</p>
+                <p class="description">Irish Whiskey Dublin</p>
             </div>
             <div class="cocktail">
              <h2>FRISKY PANKY <span class="price">7€</span></h2>
-               <p class="description">Blended Scotch Wihisky.</p>
-            </div>
-            <div class="cocktail">
-                <h2>THE CHITA <span class="price">8€</span></h2>
-                <p class="description">Single Grain Japanese Whisky.</p>
+               <p class="description">Blended Scotch Wihisky</p>
             </div>
             <div class="cocktail">
                 <h2>SMOKEHEAD - HIGH VOLTAGE  <span class="price">9€</span></h2>
-                <p class="description">Islay Single Malt Scotch Whisky.</p>
+                <p class="description">Islay Single Malt Scotch Whisky</p>
             </div>
             <div class="cocktail">
                 <h2>MONKEY SHOULDER <span class="price">10€</span></h2>
-                <p class="description">Blended Malt Scotch Whisky.</p>
+                <p class="description">Blended Malt Scotch Whisky</p>
             </div>
           </div>
         </div>
@@ -597,55 +594,55 @@
           <div id="rumlist" class="hidden">
             <div class="cocktail">
                 <h2>APPLETON 8 <span class="price">7€</span></h2>
-                <p class="description">Kentucky Straight Bourbon Whiskey.</p>
+                <p class="description">Reserver Jamaican Rum</p>
             </div>
             <div class="cocktail">
                 <h2>PLANTATION <span class="price">6€</span></h2>
-                <p class="description">Kentucky Straight Bourbon Whiskey.</p>
+                <p class="description">Artisanal Caribbean Rum - Original Dark</p>
             </div>
             <div class="cocktail">
                 <h2>PLANTATION O.F.T.D <span class="price">8€</span></h2>
-                <p class="description">Kentucky Straight Rye Whiskey.</p>
+                <p class="description">Artisanal Caribbean Rum - Overproof</p>
             </div>
             <div class="cocktail">
                 <h2>APPLETON 12 <span class="price">8€</span></h2>
-                <p class="description">Single Pot Still Irish Whiskey.</p>
+                <p class="description">Rare Blend Jamaican Rum</p>
             </div>
             <div class="cocktail">
                 <h2>RHUM J.M. <span class="price">8€</span></h2>
-                <p class="description">Island single malt Scotch Whiskey.</p>
+                <p class="description">Rhum Vieux Agricole Martinique</p>
             </div>
                 <div class="cocktail">
                 <h2>EL DORADO 12 <span class="price">8€</span></h2>
-            <p class="description">Irish whiskey.</p>
+            <p class="description">Guyana Rum</p>
               </div>
             <div class="cocktail">
                 <h2>BARON SAMEDI' <span class="price">5€</span></h2>
-            <p class="description">Irish whiskey.</p>
+            <p class="description">Caribbean Rum Spiced</p>
               </div>
             <div class="cocktail">
                 <h2>HAMPDEN <span class="price">10€</span></h2>
-            <p class="description">Irish whiskey.</p>
+            <p class="description">Blend Des Quatre Communes - Agricole</p>
               </div>
             <div class="cocktail">
                 <h2>CLARIN COMUNAL <span class="price">8€</span></h2>
-            <p class="description">Irish whiskey.</p>
+            <p class="description">Rhum pur Jus De Canne - Agricole</p>
               </div>
             <div class="cocktail">
                 <h2>PLANTATION <br> PINEAPPLE<span class="price">6€</span></h2>
-            <p class="description">Irish whiskey.</p>
+            <p class="description">Artisanal Caribbean Rum -Ananas</p>
               </div>
             <div class="cocktail">
                 <h2>PLANTATION <br> XAYMACA <span class="price">6€</span></h2>
-              <p class="description">special dry.</p>
+              <p class="description">Jamaican Rum</p>
               </div>
             <div class="cocktail">
                 <h2>NUSA CANA <span class="price">7€</span></h2>
-            <p class="description">Irish whiskey.</p>
+            <p class="description">Imported Tropical Island - Spiced Rum</p>
               </div>
             <div class="cocktail">
                 <h2>LA HECHICERA <span class="price">10€</span></h2>
-            <p class="description">Irish whiskey.</p>
+            <p class="description">Ron Extra Anejo De Colombia</p>
               </div>
           </div>
         </div>
@@ -662,20 +659,24 @@
               <p class="description"></p>
           </div>
           <div class="cocktail">
-              <h2>BENEVA - MEZKAL <span class="price">4€</span></h2>
+              <h2>SOTOL "SERPIENTES"<span class="price">8€</span></h2>
               <p class="description"></p>
           </div>
           <div class="cocktail">
-              <h2>SOTOL "SERPIENTES"<span class="price">8€</span></h2>
-              <p class="description">Padre De La Serpientes</p>
-          </div>
-          <div class="cocktail">
               <h2>SOTOL "JAGUARES"<span class="price">8€</span></h2>
-              <p class="description">Padre De La Jaguares</p>
+              <p class="description"></p>
           </div>
           <div class="cocktail">
               <h2>SOTOL "ALACRANES"<span class="price">8€</span></h2>
-              <p class="description">Padre De Los Alacranes</p>
+              <p class="description"></p>
+          </div>
+          <div class="cocktail">
+              <h2>PERRO DE SAN JUAN <span class="price">7€</span></h2>
+              <p class="description">Mezcal</p>
+          </div>
+          <div class="cocktail">
+              <h2>BENEVA<span class="price">4€</span></h2>
+              <p class="description">Mezcal</p>
           </div>
         </div>
       </div>
@@ -754,7 +755,7 @@
         <h1 onclick="toggleMenu('coffeelist')"><span>K</span>AFFETTERIA</h1>
         <div id="coffeelist" class="hidden">
             <div class="cocktail">
-                <h2>CAFFÈ <span class="price">1,3€</span></h2>
+                <h2>CAFFÈ <span class="price">1,30€</span></h2>
                 <p class="description"></p>
             </div>
             <div class="cocktail">
@@ -762,7 +763,7 @@
                 <p class="description"></p>
             </div>
             <div class="cocktail">
-                <h2>CAPPUCCINO <span class="price">2,5€</span></h2>
+                <h2>CAPPUCCINO <span class="price">2,50€</span></h2>
                 <p class="description"></p>
             </div>
             <div class="cocktail">
@@ -771,7 +772,7 @@
             </div>
             <div class="cocktail">
                 <h2>TISANA <span class="price">4€</span></h2>
-                <p class="description">con biscotti 5€</p>
+                <p class="description">Con Biscotti 5€</p>
             </div>
             <div class="cocktail">
                 <h2>APONE <span class="price">6€</span></h2>
@@ -779,11 +780,11 @@
             </div>
             <div class="cocktail">
                 <h2>CIOCCOLATA CALDA <span class="price">4€</span></h2>
-                <p class="description">con biscotti 5€</p>
+                <p class="description">Con Biscotti 5€</p>
             </div>
             <div class="cocktail">
                 <h2>PUNCH CALDO <span class="price">4€</span></h2>
-                <p class="description">arancia mandarino rum</p>
+                <p class="description">Mandarino, Arancia, Rum</p>
             </div>
         </div>
     </div>
@@ -901,76 +902,76 @@
         </div>
         <div class="cocktail">
             <h2>CRISPERS<span class="price">5€</span></h2>
-            <p class="description">patatine fritte con buccia</p>
+            <p class="description">Patatine Fritte con Buccia</p>
         </div>
         <div class="cocktail">
             <h2>OLIVE ALL'ASCOLANA*<span class="price">5€</span></h2>
-            <p class="description">1, 3, 6, 7, 8, 10</p>
+            <p class="description">**(1, 3, 6, 7, 8, 10)</p>
         </div>
         <div class="cocktail">
             <h2>MOZZARELLINE*<span class="price">5€</span></h2>
-            <p class="description">1, 6, 7, 9</p>
+            <p class="description">**(1, 6, 7, 9)</p>
         </div>
         <div class="cocktail">
             <h2>ANELLI DI CIPOLLA*<span class="price">5€</span></h2>
-            <p class="description">1, 6, 7, 8, 10</p>
+            <p class="description">**(1, 6, 7, 8, 10)</p>
         </div>
         <div class="cocktail">
             <h2>JALABITE*<span class="price">5€</span></h2>
-            <p class="description">Jalapenos piccanti con formaggio <br>1, 7</p>
+            <p class="description">Jalapenos Piccanti Con Formaggio <br>**(1, 7)</p>
         </div>
         <div class="cocktail">
             <h2>NUGGETS DI POLLO*<span class="price">5€</span></h2>
-            <p class="description">1, 3, 7, 10, 12</p>
+            <p class="description">**(1, 3, 7, 10, 12)</p>
         </div>
         <div class="cocktail">
             <h2>MISTO FRITTO<span class="price">7€</span></h2>
-            <p class="description">patatine fritte, 3 mozzarelline, 3 olive, 3 anelli di cipolla <br>1, 3, 5, 6, 7, 9, 10</p>
+            <p class="description">Patatine Fritte, 3 Mozzarelline, 3 Olive, 3 Anelli di Cipolla <br>**(1, 3, 5, 6, 7, 9, 10)</p>
         </div>
         <div class="cocktail">
             <h2>PATASPACCA<span class="price">7€</span></h2>
-            <p class="description">patatine fritte, wurstel, salsiccia luganega</p>
+            <p class="description">Patatine Fritte, Wurstel, Salsiccia Luganega</p>
         </div>
         <div class="cocktail">
             <h2>PEPITE DI PULLED PORK*<span class="price">6€</span></h2>
-            <p class="description">con salsa BBQ <br> 1, 6, 10</p> 
+            <p class="description">con salsa BBQ <br> **(1, 6, 10)</p> 
         </div>
-        <h6>* prodotto surgelato</h6>
+        <h6>* prodotto surgelato <br> ** allergeni</h6>
         </div>
     </div>
-<!--qui hamburger +allergeni-->
+<!--qui hamburger AGGIUNGERE MAIUSCOLE INIZIALI+allergeni-->
     <div class="menu">
         <h1 onclick="toggleMenu('hamblist')">HAM<span>B</span>URGER</h1>
         <div id="hamblist" class="hidden">
         <div class="cocktail">
             <h2>A-POLLO 13 <span class="price">10€</span></h2>
-            <p class="description">Pane Burger di semola, Cotoletta Crispy pollo*, cavolo rosso marinato, Maionese, salsa Teriaki, insalata iceberg, lime <br>1, 3, 4, 6, 9, 10, 12, 13</p>
+            <p class="description">Pane Burger di Semola, Cotoletta Crispy pollo*, Cavolo Rosso Marinato, Maionese, Salsa Teriaki, Insalata Iceberg, Lime <br>**(1, 3, 4, 6, 9, 10, 12, 13)</p>
         </div>
         <div class="cocktail">
             <h2>CHEESEBURGER<span class="price">8€</span></h2>
-            <p class="description">Pane Burger di semola, Carne di Bovino 100g, cheddar, insalata, pomodoro, salse a scelta <br>1, 7</p>
+            <p class="description">Pane Burger di semola, Carne di Bovino 100g, cheddar, insalata, pomodoro, salse a scelta <br>**(1, 7)</p>
         </div>
         <div class="cocktail">
             <h2>POLLON<span class="price">8€</span></h2>
-            <p class="description">Pane Burger di semola, Cotoletta Crispy pollo*, insalata, pomodoro, cipolla, ketchup, maionese,<br>1, 2, 3, 4, 6, 9, 10, 11, 12</p>
+            <p class="description">Pane Burger di semola, Cotoletta Crispy pollo*, insalata, pomodoro, cipolla, ketchup, maionese,<br>**(1, 2, 3, 4, 6, 9, 10, 11, 12)</p>
         </div>
         <div class="cocktail">
             <h2>HEIDI<span class="price">10€</span></h2>
-            <p class="description">Pane Malfatto, Carne Reale di Scottona 150g, scamorza affumicata, speck croccante, rucola, salsa tartufata <br>1, 5, 6, 7, 8, 10, 11, 14</p>
+            <p class="description">Pane Malfatto, Carne Reale di Scottona 150g, scamorza affumicata, speck croccante, rucola, salsa tartufata <br>**(1, 5, 6, 7, 8, 10, 11, 14)</p>
         </div>
         <div class="cocktail">
             <h2>GUNDAM<span class="price">10€</span></h2>
-            <p class="description">Pane Malfatto, Carne Reale di Scottona 150g, bacon, scamorza affumicata, insalata, pomodoro, cipolla, salsa BBQ <br>1, 6, 7, 10, 11</p>
+            <p class="description">Pane Malfatto, Carne Reale di Scottona 150g, bacon, scamorza affumicata, insalata, pomodoro, cipolla, salsa BBQ <br>**(1, 6, 7, 10, 11)</p>
         </div>
         <div class="cocktail">
             <h2>FANTAMAN <span class="price">12€</span></h2>
-            <p class="description">PaneBurger di semola, Doppia Carne di Bovino 100g + 100g, bacon, insalata, pomodoro, cipolla, ketchup, maionese <br>1, 3, 9</p>
+            <p class="description">Pane Burger di semola, Doppia Carne di Bovino 100g + 100g, bacon, insalata, pomodoro, cipolla, ketchup, maionese <br>**(1, 3, 9)</p>
         </div>
         <div class="cocktail">
             <h2>PEPPO<span class="price">10€</span></h2>
-            <p class="description">Pane malfatto, Carne Reale di Scottona 150g, scamorza affumicata, rucola, salsa ai peperoni affumicati <br>1, 6, 7, 10, 11</p>
+            <p class="description">Pane malfatto, Carne Reale di Scottona 150g, scamorza affumicata, rucola, salsa ai peperoni affumicati <br>**(1, 6, 7, 10, 11)</p>
         </div>
-        <h6>* prodotto surgelato</h6>
+        <h6>* prodotto surgelato <br> ** allergeni</h6>
         </div>
     </div>
 <!--qui piade e panini +allergeni-->
@@ -979,49 +980,49 @@
         <div id="pplist" class="hidden">
         <div class="cocktail">
             <h2>ROMAGNOLA <span class="price">7€</span></h2>
-            <p class="description">Piadina*, prosciutto crudo, stracchino, rucola <br>1, 3, 6, 7, 8, 9, 10</p>
+            <p class="description">Piadina*, Prosciutto crudo, Stracchino, Rucola <br>**(1, 3, 6, 7, 8, 9, 10)</p>
         </div>
         <div class="cocktail">
             <h2>SWITCH<span class="price">7€</span></h2>
-            <p class="description">Pane americano*, prosciutto cotto, funghi porcini con crema, maionese <br>1,3,5,6,7,8,10</p>
+            <p class="description">Pane Americano, Prosciutto Cotto, Funghi Porcini con Crema, Maionese <br>**(1,3,5,6,7,8,10)</p>
         </div>
         <div class="cocktail">
             <h2>REATTORE<span class="price">7€</span></h2>
-            <p class="description">Pane americano*, prosciutto crudo, rucola, scaglie di parmigiano, aceto balsamico <br>1,6,7,10,12</p>
+            <p class="description">Pane Americano*, Prosciutto Crudo, Rucola, Scaglie di Parmigiano, Aceto Balsamico <br>**(1,6,7,10,12)</p>
         </div>
         <div class="cocktail">
             <h2>T.S.O. <span class="price">7€</span></h2>
-            <p class="description">pane americano*, speck, fontina, insalata, funghi porcini con crema <br>1,5,6,7,8,10</p>
+            <p class="description">Pane Americano*, Speck, Fontina, Insalata, Funghi Porcini con Crema <br>**(1,5,6,7,8,10)</p>
         </div>
         <div class="cocktail">
             <h2>PLAFONIERA<span class="price">7€</span></h2>
-            <p class="description">Ciabatta*, speck, scamorza affumicata, crema di carciofi <br>1,6,7,10,11,14</p>
+            <p class="description">Ciabatta*, Speck, Scamorza Affumicata, Crema di Carciofi <br>**(1,6,7,10,11,14)</p>
         </div>
         <div class="cocktail">
-            <h2>ANODO <span class="price">9€</span></h2>
-            <p class="description">Piadina*, pancetta steccata, salsiccia luganega*, maionese <br>1,3,6,7,8,9,10</p>
+            <h2>ANODO **<span class="price">9€</span></h2>
+            <p class="description">Piadina*, Pancetta Steccata, Salsiccia Luganega*, Maionese <br>**(1,3,6,7,8,9,10)</p>
         </div>
         <div class="cocktail">
             <h2>BISUNTO<span class="price">9€</span></h2>
-            <p class="description">Ciabatta*, salsiccia luganega* o cotoletta di pollo*, cipolla, peperoni grigliati <br>1,6,7,10,11,14/ 2,3,4,9,12</p>
+            <p class="description">Ciabatta*, Salsiccia Luganega* o Cotoletta di Pollo*, Cipolla, Peperoni Grigliati <br>**(1,6,7,10,11,14) <br> **(2,3,4,9,12)</p>
         </div>
         <div class="cocktail">
             <h2>HOT DOG<span class="price">5€</span></h2>
-            <p class="description">Salse a scelta <br>1</p>
+            <p class="description">Salse a scelta <br>**(1)</p>
         </div>
         <div class="cocktail">
             <h2>HOT DOG H.D.L.<span class="price">5€</span></h2>
-            <p class="description">wurstel avvolto nel bacon, salse a scelta <br>1</p>
+            <p class="description">Wurstel Avvolto nel Bacon, Aalse a scelta <br>**(1)</p>
         </div>
         <div class="cocktail">
-            <h2>BOSCHETTO<span class="price">8€</span></h2>
-            <p class="description">Pan Semola, carne di bovino 100g, Scamorza, Salsa bacon Burger, crema di funghi trifolati, rucola <br> 1,7,8</p>
+            <h2>BOSCHETTO **<span class="price">8€</span></h2>
+            <p class="description">Pan Semola, Carne di Bovino 100g, Scamorza, Salsa bacon Burger, Funghi Porcini con Crema, Rucola <br> **(1,7,8)</p>
         </div>
         <div class="cocktail">
             <h2>DOUBLE BURGER<span class="price">10€</span></h2>
-            <p class="description">Pan semola, Doppia carne di bovino 100g + 100g, Cheddar, Salsa bacon burger <br>1,3,7,10</p>
+            <p class="description">Pan semola, Doppia Carne di Bovino 100g + 100g, Cheddar, Salsa Bacon Burger <br>**(1,3,7,10)</p>
         </div>
-        <h6>* prodotto surgelato</h6>
+        <h6>* prodotto surgelato <br> ** allergeni</h6>
       </div>
     </div>    
 <!-- qui vegan +allergeni (mi piacerebbe mettere pallino verde ma sarebbe in tutti)-->
@@ -1030,21 +1031,21 @@
         <div id="veganlist" class="hidden">
         <div class="cocktail">
             <h2>VEGGY DOG<span class="price">10€</span></h2>
-            <p class="description">Pane Hot Dog, Salsiccia vegana, cavolo viola marinato e vegan mayo con sriracha <br>1</p>
-        </div>
+            <p class="description">Pane Hot Dog, Salsiccia Vegana, Cavolo Viola Marinato e Vegan Mayo con Sriracha <br> **(1)</p>
+            </div>
         <div class="cocktail">
-            <h2>VEGGY GREASY<span class="price">10€</span></h2>
-            <p class="description">Ciabatta*, Salsiccia vegana, Peperoni, Cipolla <br>1,6,7,10,11,12,14</p>
+            <h2>VEGGY GREASY **<span class="price">10€</span></h2>
+            <p class="description">Ciabatta*, Salsiccia vegana, Peperoni, Cipolla <br>**(1,6,7,10,11,12,14)</p>
         </div>
         <div class="cocktail">
             <h2>VEGGY BEANS BURGER<span class="price">10€</span></h2>
-            <p class="description">Pane malfatto*, Hamburger di barbabietola rossa e fagioli rossi*, cavolo rosso, cipolla grigliata, insalata icebergm maionese vegana, salsa teriaki <br>1,6,7,10,11,12</p>
+            <p class="description">Pane malfatto*, Hamburger di Barbabietola Rossa e Fagioli Rossi*, Cavolo Rosso, Cipolla Grigliata, Insalata Icebergm Maionese Vegana, Salsa Teriaki <br>**(1,6,7,10,11,12)</p>
         </div>
         <div class="cocktail">
             <h2>GRIGLIATO<span class="price">10€</span></h2>
-            <p class="description">Ciabatta*, insalata, pomodoro, verdure grigliate, zucchine, melanzane, cipolle, peperoni* <br>1,6,7,10,11,14</p>
+            <p class="description">Ciabatta*, Insalata, Pomodoro, Verdure Grigliate<br> Zucchine, Melanzane, Cipolle, Peperoni* <br>**(1,6,7,10,11,14)</p>
         </div>
-        <h6>* prodotto surgelato</h6>
+        <h6>* prodotto surgelato <br> ** allergeni</h6>
         </div>
     </div>
 <!--qui speciali +allergeni (mi piacerebbe mettere pallino rosso per piccanti)-->
@@ -1053,29 +1054,29 @@
         <div id="specialist" class="hidden">
         <div class="cocktail">
             <h2>CLASSICO<span class="price">7€</span></h2>
-            <p class="description">Toast multicereali, prosciutto cotto, insalata iceberg, pomodoro, maionese, tabasco <br>1,3,6,7,10,11,12,14</p>
+            <p class="description">Pane Americano, Prosciutto Cotto, Insalata Iceberg, Pomodoro, Maionese, Tabasco <br>**(1,3,6,7,10,11,12,14)</p>
         </div>
         <div class="cocktail">
             <h2>CLUB SANDWICH<span class="price">10€</span></h2>
-            <p class="description">Sanwich Bread a tre strati, prosciutto cotto, bacon, pomodoro, insalata, maionese, tabasco <br>1,3,6,7,10,11,12,14</p>
+            <p class="description">Pane Americano, Prosciutto Cotto, Bacon, Pomodoro, Insalata, Maionese, Tabasco Doppio strato <br>**(1,3,6,7,10,11,12,14)</p>
         </div>
         <div class="cocktail">
             <h2>COPPATA <span class="price">10€</span></h2>
-            <p class="description">Focaccia romana, Coppa nostrana stagionata, stracchino, noci <br>1,7,8,10,11,12,14</p>
+            <p class="description">Focaccia Romana, Coppa nostrana stagionata, Stracchino, Noci <br>**(1,7,8,10,11,12,14)</p>
         </div>
         <div class="cocktail">
             <h2>FOCACCIA ROMANA<span class="price">8€</span></h2>
-            <p class="description">Base margherita, + 1,00 € ad aggiunta di ingrediente, 2,00 euro salsiccia e crudo <br>1,3,6,7,8,10,11,14</p>
+            <p class="description">Base Margherita, + 1,00 € ad aggiunta di ingrediente, 2,00 euro Salsiccia e Crudo <br>**(1,3,6,7,8,10,11,14)</p>
         </div>
         <div class="cocktail">
             <h2>INSALAZZA <span class="price">10€</span></h2>
-            <p class="description">Insalata mista con verdure fresche e tonno <br>4</p>
+            <p class="description">Insalata Mista con Verdure Fresche e Tonno <br>**(4)</p>
         </div>
         <div class="cocktail">
             <h2>CASAR SALAD<span class="price">12€</span></h2>
-            <p class="description">Insalata iceberg, straccetti di pollo, bacon, crostini di pane, scaglie di parmigiano, dressing senape e miele <br>1, 3, 7, 10</p>
+            <p class="description">Insalata Iceberg, Straccetti di Pollo, Bacon, Crostini di Pane, Scaglie di Parmigiano, Dressing di Senape e Miele <br>**(1, 3, 7, 10)</p>
         </div>
-        <h6>* prodotto surgelato</h6>
+        <h6>* prodotto surgelato <br> ** allergeni</h6>
         </div>
     </div>
 <!--qui i dolci +allergeni-->
@@ -1083,30 +1084,30 @@
         <h1 onclick="toggleMenu('dolcilist')">D<span>O</span>LCI</h1>
         <div id="dolcilist" class="hidden">
         <div class="cocktail">
-            <h2>NONNA 4.0<span class="price">6€</span></h2>
-            <p class="description">Monoporzione di pasta frolla. crema al limone, glassa al cioccolato bianco e limone <BR>1, 3, 6, 7, 8, 10</BR></p>
+            <h2>NONNA 4.0 non esiste piu<span class="price">6€</span></h2>
+            <p class="description">Monoporzione di pasta frolla. Crema al limone, Glassa al cioccolato bianco e limone <BR>**(1, 3, 6, 7, 8, 10)</BR></p>
         </div>
         <div class="cocktail">
-            <h2>IL TASTO ROSSO!<b>*</b> <span class="price">6€</span></h2>
-            <p class="description"> CHEECAKE FRUTTI ROSSI <br>1, 3, 5, 6, 7, 8, 10, 12</p>
+            <h2>TASTO ROSSO!<b>*</b> <span class="price">6€</span></h2>
+            <p class="description">Cheesecake ai frutti rossi con glassa al cioccolato bianco **(1, 3, 5, 6, 7, 8, 10, 12)</p>
         </div>
         <div class="cocktail">
-            <h2>SOUFFLÈ* <span class="price">6€</span></h2>
-            <p class="description">CIOCCOLATO <br>1, 3, 6, 7, 8</p>
+            <h2>SOUFFLÈ AL CIOCCOLATO* <span class="price">6€</span></h2>
+            <p class="description">**(1, 3, 6, 7, 8)</p>
         </div>
         <div class="cocktail">
             <h2>CHEESECAKE<span class="price">6€</span></h2>
-            <p class="description">Caramello salato o Nutella <BR>1, 2, 3, 6, 7, 8</BR></p>
+            <p class="description">Caramello salato o Nutella <BR>**(1, 2, 3, 6, 7, 8)</BR></p>
         </div>
         <div class="cocktail">
             <h2>PIADINA NUTELLA <span class="price">6€</span></h2>
-            <p class="description">1, 6, 7, 8, 10, 11, 14</p>
+            <p class="description">**(1, 6, 7, 8, 10, 11, 14)</p>
         </div>
         <div class="cocktail">
             <h2>TORTA DI NOCI<span class="price">6€</span></h2>
-            <p class="description">1, 3, 6, 7, 8</p>
+            <p class="description">**(1, 3, 6, 7, 8)</p>
         </div>
-        <h6>* prodotto surgelato</h6>
+        <h6>* prodotto surgelato <br> ** allergeni</h6>
         </div>
     </div>
 <!--lista allergeni-->
@@ -1114,7 +1115,7 @@
         <h2 onclick="toggleMenu('allergeniliste')">LISTA ALLERGENI</h2>
           <div id="allergeniliste" class="hidden">
             <div class="allergenie">
-              <img src="allergeni con numeri fatta da me.png" style="width: 300px; height: 500;" alt="">
+              <img src="allergeni con numeri fatta da me.png" style="width: 450px; height: 500;" alt="">
           </div>
         </div>
       </div>
